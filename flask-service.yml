@@ -6,7 +6,7 @@ metadata:
   namespace: two-tier
 
 spec:
-  type: NodePort
+  type: ClusterIP
 
   selector:
     app: flask-app
@@ -14,4 +14,3 @@ spec:
   ports:
     - port: 5000
       targetPort: 5000
-      nodePort: 30080
