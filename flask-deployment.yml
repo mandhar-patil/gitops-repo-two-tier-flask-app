@@ -30,7 +30,7 @@ spec:
           env:
 
             - name: MYSQL_HOST
-              value: mysql-service-worng
+              value: mysql-service
 
             - name: MYSQL_DB
               value: mydb
