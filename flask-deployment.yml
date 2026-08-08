@@ -29,22 +29,19 @@ spec:
 
           env:
 
-            - name: DB_HOST
+            - name: MYSQL_HOST
               value: mysql-service
 
-            - name: DB_PORT
-              value: "3306"
-
-            - name: DB_NAME
+            - name: MYSQL_DB
               value: mydb
 
-            - name: DB_USER
+            - name: MYSQL_USER
               valueFrom:
                 secretKeyRef:
                   name: secretes-2-tier
                   key: MYSQL_USER
 
-            - name: DB_PASSWORD
+            - name: MYSQL_PASSWORD
               valueFrom:
                 secretKeyRef:
                   name: secretes-2-tier
