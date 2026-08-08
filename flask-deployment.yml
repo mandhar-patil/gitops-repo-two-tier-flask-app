@@ -22,7 +22,7 @@ spec:
 
         - name: flask-app
 
-          image: mandhar12/two-tier-flask-app:latest
+          image: mandhar12/two-tier-flask-app:v1
 
           ports:
             - containerPort: 5000
